@@ -1,0 +1,6 @@
+#system
+SELECT b.`password`,b.create_date,a.real_name,a.id,a.user_name FROM sys_user a
+RIGHT JOIN sys_user_ext b
+on a.id=b.user_id
+-- where a.real_name like '%姓名%' 
+where a.user_name ='10024437'
